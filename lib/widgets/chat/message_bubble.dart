@@ -2,9 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MessageBubble extends StatelessWidget {
-  MessageBubble(this.message, this.isMe);
+  MessageBubble(this.message, this.isMe, {this.key});
+
   final String message;
   final bool isMe;
+  final Key key;
   @override
   Widget build(BuildContext context) {
     return Row(
